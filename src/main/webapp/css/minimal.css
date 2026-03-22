@@ -1,0 +1,111 @@
+/* Minimal Template CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --min-bg: #fafafa;
+    --min-text: #222222;
+    --min-muted: #888888;
+    --min-border: #eeeeee;
+    --min-accent: #000000;
+}
+
+body.template-minimal {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--min-bg);
+    color: var(--min-text);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+body.template-minimal h1, 
+body.template-minimal h2, 
+body.template-minimal h3 {
+    font-weight: 500;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+body.template-minimal h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+}
+
+body.template-minimal h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--min-border);
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--min-muted);
+}
+
+body.template-minimal p {
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+body.template-minimal a {
+    color: var(--min-accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--min-border);
+    transition: all 0.2s;
+}
+
+body.template-minimal a:hover {
+    border-bottom-color: var(--min-accent);
+}
+
+.min-header {
+    margin-bottom: 4rem;
+}
+
+.min-contact {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--min-muted);
+    margin-top: 1rem;
+}
+
+.min-item {
+    margin-bottom: 2rem;
+}
+
+.min-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.25rem;
+}
+
+.min-item-title {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.min-item-subtitle {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--min-muted);
+}
+
+.min-item-date {
+    font-size: 0.85rem;
+    color: var(--min-muted);
+}
+
+.min-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.min-skill-tag {
+    background: #fff;
+    border: 1px solid var(--min-border);
+    padding: 0.2rem 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 4px;
+}

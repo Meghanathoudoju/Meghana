@@ -1,0 +1,176 @@
+/* Professional Template CSS */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+:root {
+    --prof-bg: #ffffff;
+    --prof-text: #333333;
+    --prof-text-light: #666666;
+    --prof-primary: #1a365d;
+    --prof-secondary: #2b6cb0;
+    --prof-border: #e2e8f0;
+    --prof-accent: #c53030;
+    --prof-surface-alt: #f7fafc;
+}
+
+body.template-professional {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--prof-text);
+    background-color: var(--prof-bg);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.prof-header-wrap {
+    background-color: var(--prof-primary);
+    color: #ffffff;
+    padding: 4rem 0;
+    border-bottom: 5px solid var(--prof-secondary);
+}
+
+.prof-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.prof-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+body.template-professional h1, 
+body.template-professional h2, 
+body.template-professional h3 {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+.prof-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+.prof-title {
+    font-size: 1.25rem;
+    color: #e2e8f0;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.prof-contact {
+    text-align: right;
+    font-size: 0.95rem;
+}
+
+.prof-contact a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.25rem;
+    transition: opacity 0.2s;
+}
+
+.prof-contact a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.prof-main {
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .prof-main {
+        grid-template-columns: 1fr;
+    }
+    .prof-contact {
+        text-align: left;
+    }
+}
+
+.prof-section {
+    margin-bottom: 3.5rem;
+}
+
+.prof-section-title {
+    font-size: 1.5rem;
+    color: var(--prof-primary);
+    border-bottom: 2px solid var(--prof-primary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.prof-item {
+    margin-bottom: 2rem;
+}
+
+.prof-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.25rem;
+}
+
+.prof-item-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--prof-text);
+}
+
+.prof-item-date {
+    font-size: 0.9rem;
+    color: var(--prof-text-light);
+    font-weight: 600;
+}
+
+.prof-item-subtitle {
+    font-style: italic;
+    color: var(--prof-secondary);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.prof-item-desc {
+    color: var(--prof-text-light);
+}
+
+.prof-sidebar {
+    background-color: var(--prof-surface-alt);
+    padding: 2rem;
+    border-radius: 4px;
+    border: 1px solid var(--prof-border);
+}
+
+.prof-skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.prof-skills-list li {
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--prof-border);
+    padding-bottom: 0.25rem;
+}
+
+.prof-skill-name {
+    font-weight: 600;
+}
+
+.prof-skill-level {
+    color: var(--prof-secondary);
+}

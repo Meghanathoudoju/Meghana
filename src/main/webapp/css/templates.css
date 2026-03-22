@@ -1,0 +1,71 @@
+/* Variables & Base for Templates */
+.portfolio-body { margin: 0; padding: 0; }
+
+/* COMMON COMPONENTS */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+section { padding: 60px 0; }
+.section-title { font-size: 2.5rem; margin-bottom: 30px; position: relative; display: inline-block; }
+
+/* 1. MINIMAL TEMPLATE */
+.template-minimal { background: #ffffff; color: #333333; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.template-minimal header { text-align: center; padding: 80px 0 40px; border-bottom: 1px solid #eee; }
+.template-minimal .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
+.template-minimal h1 { font-weight: 300; font-size: 3.5rem; letter-spacing: 2px; }
+.template-minimal .title { color: #888; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
+.template-minimal .contact-links a { color: #555; margin: 0 10px; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s; }
+.template-minimal .contact-links a:hover { border-color: #555; }
+.template-minimal section { border-bottom: 1px solid #eee; }
+.template-minimal .section-title { font-weight: 300; font-size: 2rem; }
+.template-minimal .item h3 { font-size: 1.3rem; margin-bottom: 5px; font-weight: 500; }
+.template-minimal .item .meta { color: #888; font-size: 0.9rem; margin-bottom: 10px; }
+.template-minimal .skill-tag { display: inline-block; padding: 5px 15px; border: 1px solid #ddd; border-radius: 20px; margin: 5px; font-size: 0.9rem; }
+
+/* 2. MODERN TEMPLATE */
+.template-modern { background: #0f172a; color: #cbd5e1; font-family: 'Inter', sans-serif; }
+.template-modern header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 100px 0; border-bottom: 1px solid #334155; }
+.template-modern .header-content { display: flex; align-items: center; gap: 40px; max-width: 1000px; margin: 0 auto; }
+.template-modern .profile-img { width: 200px; height: 200px; border-radius: 20px; object-fit: cover; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5); }
+.template-modern h1 { color: #f8fafc; font-size: 3.5rem; font-weight: 700; background: linear-gradient(to right, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.template-modern .title { font-size: 1.5rem; color: #94a3b8; margin: 10px 0 20px; }
+.template-modern .contact-links a { color: #f8fafc; background: #334155; padding: 8px 15px; border-radius: 5px; margin-right: 10px; display: inline-block; text-decoration: none; transition: background 0.3s; }
+.template-modern .contact-links a:hover { background: #475569; }
+.template-modern section { background: #1e293b; margin: 40px auto; border-radius: 20px; padding: 40px; max-width: 1000px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
+.template-modern .section-title { color: #f8fafc; font-size: 1.8rem; border-bottom: 2px solid #38bdf8; padding-bottom: 10px; }
+.template-modern .item { padding-left: 20px; border-left: 2px solid #334155; margin-bottom: 30px; position: relative; }
+.template-modern .item::before { content: ""; width: 12px; height: 12px; background: #38bdf8; border-radius: 50%; position: absolute; left: -7px; top: 5px; }
+.template-modern .item h3 { color: #f1f5f9; font-size: 1.4rem; }
+.template-modern .item .meta { color: #38bdf8; font-size: 0.9rem; font-weight: 500; margin: 5px 0 15px; }
+.template-modern .skill-tag { background: #0ea5e9; color: white; padding: 6px 12px; border-radius: 5px; display: inline-block; margin: 5px; font-weight: 600; font-size: 0.85rem; }
+
+/* 3. PROFESSIONAL TEMPLATE */
+.template-professional { background: #f8f9fc; color: #2e384d; font-family: 'Roboto', sans-serif; }
+.template-professional .top-header { background: #1a237e; color: white; padding: 60px 0; }
+.template-professional .header-container { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.template-professional .header-text h1 { font-size: 2.8rem; margin: 0; }
+.template-professional .header-text p.title { font-size: 1.2rem; opacity: 0.8; margin-top: 5px; }
+.template-professional .profile-img { width: 120px; height: 120px; border-radius: 50%; border: 4px solid white; object-fit: cover; }
+.template-professional .contact-bar { background: #283593; color: white; padding: 15px 0; text-align: center; font-size: 0.95rem; }
+.template-professional .contact-bar span { margin: 0 15px; }
+.template-professional .contact-bar a { color: #8c9eff; text-decoration: none; }
+.template-professional main { max-width: 1100px; margin: 40px auto; display: grid; grid-template-columns: 1fr 2fr; gap: 40px; padding: 0 20px; }
+.template-professional .sidebar-col { background: white; padding: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-radius: 8px; }
+.template-professional .main-col { background: white; padding: 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-radius: 8px; }
+.template-professional .section-title { font-size: 1.4rem; color: #1a237e; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; margin-bottom: 20px; margin-top: 0; display: block; }
+.template-professional .item { margin-bottom: 25px; }
+.template-professional .item h3 { font-size: 1.2rem; color: #3949ab; margin-bottom: 5px; }
+.template-professional .item .meta { font-weight: 500; color: #5c6bc0; font-size: 0.9rem; margin-bottom: 8px; }
+.template-professional .skill-item { display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 10px 0; }
+.template-professional .skill-item strong { color: #2e384d; }
+
+@media (max-width: 768px) {
+    .template-modern .header-content { flex-direction: column; text-align: center; }
+    .template-professional main { grid-template-columns: 1fr; }
+    .template-professional .header-container { flex-direction: column; text-align: center; }
+    .template-professional .profile-img { margin-top: 20px; }
+}
+
+/* Base print styles for PDF generation adjustments */
+@media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .no-print { display: none !important; }
+}
