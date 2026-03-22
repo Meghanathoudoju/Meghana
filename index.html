@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Preview</title>
+    <!-- Import both CSS file templates -->
+    <link rel="stylesheet" href="css/minimal.css">
+    <link rel="stylesheet" href="css/modern.css">
+
+    <style>
+        /* Small styling for the floating theme switcher */
+        .theme-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(30, 30, 30, 0.8);
+            backdrop-filter: blur(5px);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            gap: 10px;
+            font-family: sans-serif;
+        }
+
+        .theme-switcher button {
+            background-color: #fff;
+            color: #333;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
+
+        .theme-switcher button:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        .active-btn {
+            background-color: #3b82f6 !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body class="template-minimal">
+
+    <!-- FLOATING THEME CONTROLS -->
+    <div class="theme-switcher">
+        <button id="btn-minimal" class="active-btn" onclick="switchTheme('minimal')">Minimal</button>
+        <button id="btn-modern" onclick="switchTheme('modern')">Modern</button>
+    </div>
+
+    <!-- MINIMAL TEMPLATE VIEW -->
+    <div id="view-minimal">
+        <div class="min-header">
+            <h1>Alex Developer</h1>
+            <h2>Software Engineer</h2>
+            <div class="min-contact">
+                <span>alex.dev@example.com</span>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="min-item">
+            <div class="min-item-header">
+                <div class="min-item-title">Experience</div>
+                <div class="min-item-date">2020 - Present</div>
+            </div>
+            <div class="min-item-subtitle">Senior Backend Engineer</div>
+            <p>Developing scalable web services, RESTful APIs, and streamlining server infrastructure deployments using
+                Node.js and Java.</p>
+            <div class="min-skills">
+                <span class="min-skill-tag">Java</span>
+                <span class="min-skill-tag">Spring Boot</span>
+                <span class="min-skill-tag">SQL</span>
+            </div>
+        </div>
+
+        <div class="min-item">
+            <div class="min-item-header">
+                <div class="min-item-title">Education</div>
+                <div class="min-item-date">2016 - 2020</div>
+            </div>
+            <div class="min-item-subtitle">B.S. in Computer Science</div>
+            <p>University of Technology. Specialized in distributed systems and software architecture.</p>
+        </div>
+    </div>
+
+    <!-- MODERN TEMPLATE VIEW -->
+    <div id="view-modern" style="display: none;">
+        <div class="mod-container">
+            <div class="mod-hero">
+                <h1>Alex Developer</h1>
+                <p>Full Stack Engineer</p>
+                <div class="mod-contact-links">
+                    <a href="#" class="mod-btn">Contact Me</a>
+                    <a href="#" class="mod-btn">View Resume</a>
+                </div>
+            </div>
+
+            <div class="mod-section">
+                <h2 class="mod-section-title">Latest Projects</h2>
+                <div class="mod-grid">
+                    <div class="mod-card">
+                        <div class="mod-card-title">E-Commerce Platform</div>
+                        <div class="mod-card-subtitle">Microservices Architecture</div>
+                        <p>High-performance backend API serving thousands of concurrent user queries and seamless
+                            checkout flows.</p>
+                        <div class="mod-skills-wrap">
+                            <span class="mod-skill">React</span>
+                            <span class="mod-skill">Node.js</span>
+                            <span class="mod-skill">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="mod-card">
+                        <div class="mod-card-title">Portfolio Builder App</div>
+                        <div class="mod-card-subtitle">Personal Project</div>
+                        <p>A dynamically generated portfolio platform offering modern, minimal, and professional design
+                            templates.</p>
+                        <div class="mod-skills-wrap">
+                            <span class="mod-skill">Java JSP</span>
+                            <span class="mod-skill">MySQL</span>
+                            <span class="mod-skill">CSS3</span>
+                        </div>
+                    </div>
+                    <div class="mod-card">
+                        <div class="mod-card-title">AI Chat Interface</div>
+                        <div class="mod-card-subtitle">Open Source Tool</div>
+                        <p>Interactive dashboard capable of executing complex agent workflows securely.</p>
+                        <div class="mod-skills-wrap">
+                            <span class="mod-skill">Vue.js</span>
+                            <span class="mod-skill">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THEME TOGGLE LOGIC -->
+    <script>
+        function switchTheme(theme) {
+            // Update Body Class to trigger CSS specific styles
+            document.body.className = 'template-' + theme;
+
+            // Toggle Display Views
+            if (theme === 'minimal') {
+                document.getElementById('view-minimal').style.display = 'block';
+                document.getElementById('view-modern').style.display = 'none';
+
+                document.getElementById('btn-minimal').classList.add('active-btn');
+                document.getElementById('btn-modern').classList.remove('active-btn');
+            } else {
+                document.getElementById('view-minimal').style.display = 'none';
+                document.getElementById('view-modern').style.display = 'block';
+
+                document.getElementById('btn-modern').classList.add('active-btn');
+                document.getElementById('btn-minimal').classList.remove('active-btn');
+            }
+        }
+    </script>
+</body>
+
+</html>
